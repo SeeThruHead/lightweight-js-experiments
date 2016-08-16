@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "kotatsu build --es2015 --minify --jsx --pragma h client src/index.js",
+    "build": "kotatsu build --es2015 --minify --jsx --pragma h client src/index.js -o dist/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-preset-es2015": "^6.13.2",
+    "kotatsu": "^0.14.0"
   },
   "dependencies": {
     "babel-plugin-transform-react-jsx": "^6.8.0",
