@@ -1,7 +1,6 @@
 import Clock from './app';
 import { h, render } from 'preact';
 import { createStore } from 'redux';
-import { Provider } from 'preact-redux';
 
 const store = createStore(() => ({ bob: 'bob' }));
 
